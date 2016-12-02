@@ -12,6 +12,10 @@ To train a new model: `python model.py --training=True --name=my_model`
 
 To test accuracy: `python model.py --training=False --name=my_model --epochs=1 --dropout_keep_prob=1`
 
+Note that the tfrecords and model files are stored with [git lfs](https://git-lfs.github.com/) 
+
+Raw data for use with `reader.py` to produce .tfrecords files was downloaded from [http://cs.nyu.edu/~kcho/DMQA/]
+
 Interesting parts
 - Masked softmax implementation
 - Example of batched sparse tensors with correct mask handling
